@@ -13,7 +13,7 @@ html, body, #root {
   text-align: center;
   width: 100%;
   height: 100%;
-  background-color: #68bde1;
+  background-color: #f3f3f3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,8 +24,8 @@ width: 100%;
 }
 
 .App h1 {
-  font-size: 40px;
-  color: white;
+  font-size: 36px;
+  color: #75c9ed;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -33,7 +33,7 @@ width: 100%;
   flex: 1;
   background-color: white;
   color: #3088ad;
-  margin: 100px 0;
+  margin: 70px 0;
   appearance: none;
   border: none;
   width: 80%;
@@ -42,6 +42,7 @@ width: 100%;
   font-family: 'Lato', sans-serif;
   font-size: 17px;
   font-weight: 700;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -50,5 +51,5 @@ width: 100%;
   left: 0;
   bottom: 15px;
   width: 100%;
-  color: #88ddff;
+  color: #bdc3c7;
 }
