@@ -5,7 +5,13 @@ export class Groups extends React.Component {
     return (
       <div className="groupsComponent">
         <h1>Create a group</h1>
-        <button id="createGroup">Start a meet</button>
+        <form action="">
+          <input type="text" name="userId" placeholder="Enter UserID..." />
+          <textarea defaultValue="SAMANIMUKHTAR#F9BJSD093DCM"></textarea>
+        </form>
+        <div className="createGroupWrapper">
+          <button id="createGroup">Meet up!</button>
+        </div>
       </div>
     )
   }
