@@ -4,10 +4,14 @@ export class Groups extends React.Component {
   render(){
     return (
       <div className="groupsComponent">
-        <h1>Create a group</h1>
+        <div className="headerWrapper">
+          <h1>CREATE A GROUP</h1>
+        </div>
         <form action="">
-          <input type="text" name="userId" placeholder="Enter UserID..." />
-          <textarea defaultValue="SAMANIMUKHTAR#F9BJSD093DCM"></textarea>
+          <span>Enter ID's of users to invite:</span>
+          <input type="text" name="userId" placeholder="e.g. INAN#GOH9EF" />
+          <span>Invited users:</span>
+          <textarea value="- SAMANI#F9BJS2"></textarea>
         </form>
         <div className="createGroupWrapper">
           <button id="createGroup">Meet up!</button>
