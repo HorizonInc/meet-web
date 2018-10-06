@@ -65,6 +65,25 @@ button {
   position: relative;
 }
 
+.groupsComponent .invitesContainer {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 100%;
+}
+
+.groupsComponent .createGroupContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.groupsComponent .createGroupContainer ul {
+    
+}
+
 .groupsComponent .headerWrapper {
   height: 15%;
   width: 100%;
@@ -102,10 +121,6 @@ button {
 
 .groupsComponent input[type="text"]::placeholder {
   color: #ccc;
-}
-
-.groupsComponent input[type="text"]:active {
-  outline: none;
 }
 
 .groupsComponent form > span {
@@ -159,7 +174,7 @@ button {
   color: red;
 }
 
-.groupsComponent .createGroupWrapper {
+.groupsComponent .createGroupBtnWrapper {
   position: relative;
   bottom: 0;
   left: 0;
@@ -170,7 +185,7 @@ button {
   height: 15%;
 }
 
-.groupsComponent .createGroupWrapper button#createGroup {
+.groupsComponent .createGroupBtnWrapper button#createGroup {
   flex: 1;
   background-color: #3498db;
   color: white;
