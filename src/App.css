@@ -95,12 +95,17 @@ button {
   margin: 10px auto 20px auto;
 }
 
-/* .groupsComponent input[type="text"]:focus {
-  border: 2px solid #68bde1;
-} */
+.groupsComponent input[type="text"]:focus {
+  /* border: 2px solid #68bde1; */
+  outline: none;
+}
 
 .groupsComponent input[type="text"]::placeholder {
   color: #ccc;
+}
+
+.groupsComponent input[type="text"]:active {
+  outline: none;
 }
 
 .groupsComponent form > span {
