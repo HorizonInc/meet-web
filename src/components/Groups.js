@@ -1,28 +1,26 @@
 import React from "react";
 
 export class Groups extends React.Component {
-  textChange(event) {
-    var str = event.target.value;
-    var isCorrect = /^([A-Z]+#[A-Z0-9]{6})$/.test(str);
-    if (str === "") {
-      document.getElementById("userIds").style.border = "none";
-    } else if (isCorrect) {
-      document.getElementById("userIds").style.border = "2px solid green";
-    } else {
-      document.getElementById("userIds").style.border = "2px solid red";
+    textChange(event) {
+        var str = event.target.value;
+        var isCorrect = /^([A-Z]+#[A-Z0-9]{6})$/.test(str);
+        if (str === "") {
+            document.getElementById("userIds").style.border = "none";
+        } else if (isCorrect) {
+            document.getElementById("userIds").style.border = "2px solid green";
+        } else {
+            document.getElementById("userIds").style.border = "2px solid red";
+        }
     }
-  }
 
-  render() {
-    return (
-        <div className="groupsComponent">
+    render() {
+        return (<div className="groupsComponent">
+            <button className="invitesButton"></button>
             <div className="invitesContainer">
                 <div className="headerWrapper">
                     <h1>Group Invites</h1>
                 </div>
-                <ul className="invitesWrapper">
-
-                </ul>
+                <ul className="invitesWrapper"></ul>
             </div>
             <div className="createGroupContainer">
                 <div className="headerWrapper">
@@ -34,10 +32,10 @@ export class Groups extends React.Component {
                     <span>Invited users:</span>
                     <ul className="invitedUsersWrapper">
                         <li>
-                          <span>SAMANI#G8RVI4</span>
-                          <button id="deleteInvite">
-                            <i className="fas fa-times"></i>
-                          </button>
+                            <span>SAMANI#G8RVI4</span>
+                            <button id="deleteInvite">
+                                <i className="fas fa-times"></i>
+                            </button>
                         </li>
                     </ul>
                 </form>
@@ -45,7 +43,6 @@ export class Groups extends React.Component {
                     <button id="createGroup">Meet up!</button>
                 </div>
             </div>
-        </div>
-    )
-  }
+        </div>)
+    }
 }

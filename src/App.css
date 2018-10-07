@@ -1,68 +1,71 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 html, body, #root {
-  height: 100%;
+    height: 100%;
 }
 
 button {
-  appearance: none;
-  border: none;
-  font-family: 'Lato', sans-serif;
-  font-size: 17px;
-  font-weight: 700;
+    appearance: none;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .App {
-  height: 100%;
+    height: 100%;
 }
 
 .loginComponent {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  background-color: #f3f3f3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .loginComponent h1 {
-  font-size: 36px;
-  color: #75c9ed;
-  font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #75c9ed;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .loginComponent #facebookBtn {
-  flex: 1;
-  background-color: white;
-  color: #3088ad;
-  margin: 70px 0;
-  width: 80%;
-  height: 50px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    background-color: white;
+    color: #3088ad;
+    margin: 70px 0;
+    width: 80%;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
 }
 
-
 .loginComponent footer {
-  position: absolute;
-  left: 0;
-  bottom: 15px;
-  width: 100%;
-  color: #bdc3c7;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    color: #bdc3c7;
 }
 
 .groupsComponent {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  background-color: #f3f3f3;
-  position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.groupsComponent .invitesButton {
+    position: absolute;
 }
 
 .groupsComponent .invitesContainer {
@@ -80,125 +83,123 @@ button {
     width: 100%;
 }
 
-.groupsComponent .createGroupContainer ul {
-    
-}
+.groupsComponent .createGroupContainer ul {}
 
 .groupsComponent .headerWrapper {
-  height: 15%;
-  width: 100%;
-  display: flex;
-  align-items:center;
-  justify-content: center;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .groupsComponent h1 {
-  flex: 1;
-  color: #68bde1;
-  font-family: 'Montserrat', sans-serif;
+    flex: 1;
+    color: #68bde1;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .groupsComponent form {
-  height: 70%;
+    height: 70%;
 }
 
 .groupsComponent input[type="text"] {
-  display: block;
-  width: 80%;
-  height: 40px;
-  font-size: 17px;
-  border-radius: 17px;
-  text-indent: 12px;
-  border: none;
-  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
-  margin: 10px auto 20px auto;
+    display: block;
+    width: 80%;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 17px;
+    text-indent: 12px;
+    border: none;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    margin: 10px auto 20px auto;
 }
 
 .groupsComponent input[type="text"]:focus {
-  /* border: 2px solid #68bde1; */
-  outline: none;
+    /* border: 2px solid #68bde1; */
+    outline: none;
 }
 
 .groupsComponent input[type="text"]::placeholder {
-  color: #ccc;
+    color: #ccc;
 }
 
-.groupsComponent form > span {
-  display: block;
-  text-align: left;
-  margin-left: 11%;
-  margin-bottom: 5px;
-  font-size: 17px;
-  color: #aaa;
+.groupsComponent form>span {
+    display: block;
+    text-align: left;
+    margin-left: 11%;
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: #aaa;
 }
 
 .groupsComponent ul {
-  width: 80%;
-  height: calc(100% - 130px);
-  margin: 0 auto;
-  border-radius: 17px;
-  background-color: #fff;
-  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
-  overflow: scroll;
+    width: 80%;
+    height: calc(100% - 130px);
+    margin: 0 auto;
+    border-radius: 17px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
 }
 
 .groupsComponent ul li {
-  font-size: 17px;
-  height: 32px;
-  border-bottom: 1px solid #fafafa;
-  text-align: left;
+    font-size: 17px;
+    height: 32px;
+    border-bottom: 1px solid #fafafa;
+    text-align: left;
 }
 
 .groupsComponent ul li:hover {
-  background-color: #fafafa;
+    background-color: #fafafa;
 }
 
 .groupsComponent ul li span {
-  color: #aaa;
-  display: inline-block;
-  margin: 5px 0px 5px 10px;
+    color: #aaa;
+    display: inline-block;
+    margin: 5px 0px 5px 10px;
 }
 
 .groupsComponent ul li button#deleteInvite {
-  float: right;
-  clear: right;
-  height: 100%;
-  width: 32px;
-  background-color: transparent;
-  color: #eee;
-  cursor: pointer;
+    float: right;
+    clear: right;
+    height: 100%;
+    width: 32px;
+    background-color: transparent;
+    color: #eee;
+    cursor: pointer;
 }
 
 .groupsComponent ul li button#deleteInvite:hover {
-  background-color: #fff3f3;
-  color: red;
+    background-color: #fff3f3;
+    color: red;
 }
 
 .groupsComponent .createGroupBtnWrapper {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  height: 15%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
 }
 
 .groupsComponent .createGroupBtnWrapper button#createGroup {
-  flex: 1;
-  background-color: #3498db;
-  color: white;
-  max-width: 80%;
-  height: 50px;
-  border-radius: 15px;
-  font-size: 20px;
-  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    background-color: #3498db;
+    color: white;
+    max-width: 80%;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-height: 460px) {
-  html, body {
-    height: 500px;
-    overflow: scroll;
-  }
+    html, body {
+        height: 500px;
+        overflow: scroll;
+    }
 }
