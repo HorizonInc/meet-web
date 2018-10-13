@@ -15,13 +15,14 @@ export class Groups extends React.Component {
 
     render() {
         return (<div className="groupsComponent">
-            <button className="invitesButton"></button>
+
             <div className="invitesContainer">
                 <div className="headerWrapper">
                     <h1>Group Invites</h1>
                 </div>
                 <ul className="invitesWrapper"></ul>
             </div>
+
             <div className="createGroupContainer">
                 <div className="headerWrapper">
                     <h1>CREATE A GROUP</h1>
@@ -38,6 +39,7 @@ export class Groups extends React.Component {
                             </button>
                         </li>
                     </ul>
+                    <button className="invitesButton">Invites</button>
                 </form>
                 <div className="createGroupBtnWrapper">
                     <button id="createGroup">Meet up!</button>

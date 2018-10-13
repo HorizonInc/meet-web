@@ -64,10 +64,6 @@ button {
     position: relative;
 }
 
-.groupsComponent .invitesButton {
-    position: absolute;
-}
-
 .groupsComponent .invitesContainer {
     position: absolute;
     left: -100%;
@@ -83,8 +79,6 @@ button {
     width: 100%;
 }
 
-.groupsComponent .createGroupContainer ul {}
-
 .groupsComponent .headerWrapper {
     height: 15%;
     width: 100%;
@@ -93,7 +87,7 @@ button {
     justify-content: center;
 }
 
-.groupsComponent h1 {
+.groupsComponent .headerWrapper h1 {
     flex: 1;
     color: #68bde1;
     font-family: 'Montserrat', sans-serif;
@@ -101,6 +95,23 @@ button {
 
 .groupsComponent form {
     height: 70%;
+    position: relative;
+}
+
+.invitesButton {
+    cursor: pointer;
+    position: absolute;
+    /* top: calc(15% + 118px); */
+    top: 115px;
+    left:0;
+    width: calc(70vh - 130px);
+    background-color: white;
+    transform: rotate(90deg);
+    transform-origin: 10.5px 10.5px;
+    /* padding: 5px 30px; */
+    color: #ccc;
+    border-radius: 17px 17px 0 0;
+    box-shadow: 0 0px 15px -2px rgba(0, 0, 0, 0.1);
 }
 
 .groupsComponent input[type="text"] {
@@ -124,7 +135,7 @@ button {
     color: #ccc;
 }
 
-.groupsComponent form>span {
+.groupsComponent form > span {
     display: block;
     text-align: left;
     margin-left: 11%;
