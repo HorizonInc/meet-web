@@ -28,7 +28,7 @@ export class Groups extends React.Component {
                     <h1>CREATE A GROUP</h1>
                 </div>
                 <form action="">
-                    <span>Enter ID's of users to invite:</span>
+                    <span>Enter IDs of users to invite:</span>
                     <input type="text" id="userIds" name="userIds" placeholder="e.g. INAN#GOSH9EF" onChange={(event) => this.textChange(event)}/>
                     <span>Invited users:</span>
                     <ul className="invitedUsersWrapper">
