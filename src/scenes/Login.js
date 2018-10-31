@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 import logo from "../images/meet_logo.png";
 
-export class Login extends React.Component {
+export default class Login extends React.Component {
   render(){
     var today = new Date();
     return (

@@ -1,7 +1,10 @@
 import React, { Component } from "react";
+
+//Components:
+import CreateGroupForm from "../components/CreateGroupForm";
 import Button from "../components/Button";
 
-export class Groups extends Component {
+export default class Groups extends Component {
     textChange(event) {
         var str = event.target.value;
         var isCorrect = /^([A-Z]+#[A-Z0-9]{6})$/.test(str);
@@ -28,22 +31,11 @@ export class Groups extends Component {
                 <div className="headerWrapper">
                     <h1>CREATE A GROUP</h1>
                 </div>
-                <form action="">
-                    <span>Enter IDs of users to invite:</span>
-                    <input type="text" id="userIds" name="userIds" placeholder="e.g. INAN#GOSH9EF" onChange={(event) => this.textChange(event)}/>
-                    <span>Invited users:</span>
-                    <ul className="invitedUsersWrapper">
-                        <li>
-                            <span>SAMANI#G8RVI4</span>
-                            <button id="deleteInvite">
-                                <i className="fas fa-times"></i>
-                            </button>
-                        </li>
-                    </ul>
-                    <button className="invitesButton">Invites</button>
-                </form>
+                
+                <CreateGroupForm />
+
                 <div className="createGroupBtnWrapper">
-                    <Button style={styles.MeetUpBtn}>Meet up!</Button>
+                    <Button style={styles.meetupBtn}>Meet up!</Button>
                 </div>
             </div>
         </div>)
@@ -51,7 +43,7 @@ export class Groups extends Component {
 }
 
 const styles = {
-    MeetUpBtn: {
+    meetupBtn: {
         backgroundColor: '#3498db',
         flex: 1,
         color: '#fff',
