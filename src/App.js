@@ -7,7 +7,7 @@ import { Groups } from './scenes/Groups';
 class App extends Component {
     render() {
         return (
-            <div className="App">
+            <div style={styles.container}>
                 <Login />
                 {/* <Groups /> */}
             </div>);
@@ -15,3 +15,9 @@ class App extends Component {
 }
 
 export default App;
+
+const styles = {
+    container: {
+        height: '100%'
+    }
+}
