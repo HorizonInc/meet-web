@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
-import { Login } from './components/Login';
-import { Groups } from './components/Groups';
+import { Login } from './scenes/Login';
+import { Groups } from './scenes/Groups';
 
-class App extends React.Component {
+class App extends Component {
     render() {
         return (
             <div className="App">
-                <Groups />
+                <Login />
+                {/* <Groups /> */}
             </div>);
     }
 }

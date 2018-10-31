@@ -9,14 +9,6 @@ html, body, #root {
     height: 100%;
 }
 
-button {
-    appearance: none;
-    border: none;
-    font-family: 'Lato', sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-}
-
 .App {
     height: 100%;
 }
@@ -35,17 +27,6 @@ button {
     font-size: 36px;
     color: #75c9ed;
     font-family: 'Montserrat', sans-serif;
-}
-
-.loginComponent #facebookBtn {
-    flex: 1;
-    background-color: white;
-    color: #3088ad;
-    margin: 70px 0;
-    width: 80%;
-    height: 50px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
 }
 
 .loginComponent footer {

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
+import Button from "../components/Button";
 
-export class Groups extends React.Component {
+export class Groups extends Component {
     textChange(event) {
         var str = event.target.value;
         var isCorrect = /^([A-Z]+#[A-Z0-9]{6})$/.test(str);
@@ -42,9 +43,20 @@ export class Groups extends React.Component {
                     <button className="invitesButton">Invites</button>
                 </form>
                 <div className="createGroupBtnWrapper">
-                    <button id="createGroup">Meet up!</button>
+                    <Button style={styles.MeetUpBtn}>Meet up!</Button>
                 </div>
             </div>
         </div>)
+    }
+}
+
+const styles = {
+    MeetUpBtn: {
+        backgroundColor: '#3498db',
+        flex: 1,
+        color: '#fff',
+        fontSize: '20px',
+        maxWidth: '80%',
+        borderRadius: '15px'
     }
 }
