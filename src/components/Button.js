@@ -17,9 +17,12 @@ export default class Button extends Component {
 }
 
 Button.propTypes = {
-	style: PropTypes.string,
+	style: PropTypes.object,
 	className: PropTypes.string,
 	onClick: PropTypes.func,
 	id: PropTypes.string,
-	children: PropTypes.node
+	children: PropTypes.oneOfType([
+		PropTypes.node,
+		PropTypes.string
+	]),
 };

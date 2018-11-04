@@ -1,22 +1,12 @@
 import React, { Component } from "react";
 
+import { styles } from "./styles/GroupsStyles";
+
 //Components:
 import CreateGroupForm from "../components/CreateGroupForm";
 import Button from "../components/Button";
 
 export default class Groups extends Component {
-	textChange(event) {
-		var str = event.target.value;
-		var isCorrect = /^([A-Z]+#[A-Z0-9]{6})$/.test(str);
-		if (str === "") {
-			document.getElementById("userIds").style.border = "none";
-		} else if (isCorrect) {
-			document.getElementById("userIds").style.border = "2px solid green";
-		} else {
-			document.getElementById("userIds").style.border = "2px solid red";
-		}
-	}
-
 	render() {
 		return (<div className="groupsComponent">
 
@@ -41,14 +31,3 @@ export default class Groups extends Component {
 		</div>);
 	}
 }
-
-const styles = {
-	meetupBtn: {
-		backgroundColor: "#3498db",
-		flex: 1,
-		color: "#fff",
-		fontSize: "20px",
-		maxWidth: "80%",
-		borderRadius: "15px"
-	}
-};
