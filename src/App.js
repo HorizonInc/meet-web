@@ -2,8 +2,8 @@ import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faStroopwafel, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-// import Login from './scenes/Login';
-import Groups from "./scenes/Groups";
+import Login from "./scenes/Login";
+// import Groups from "./scenes/Groups";
 
 import "./App.css";
 
@@ -13,9 +13,10 @@ class App extends React.Component {
 	render() {
 		return (
 			<div style={styles.container}>
-				{/* <Login /> */}
-				<Groups />
-			</div>);
+				<Login />
+				{/* <Groups /> */}
+			</div>
+		);
 	}
 }
 
