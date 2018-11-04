@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { styles } from "./styles/ButtonStyles";
+import { styles } from "./styles/MaterialButtonStyles";
 
-export default class Button extends Component {
+export default class MaterialButton extends Component {
 	render(){
 		return (
 			<button
@@ -16,7 +16,7 @@ export default class Button extends Component {
 	}
 }
 
-Button.propTypes = {
+MaterialButton.propTypes = {
 	style: PropTypes.object,
 	className: PropTypes.string,
 	onClick: PropTypes.func,

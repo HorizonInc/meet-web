@@ -4,7 +4,7 @@ import { styles } from "./styles/GroupsStyles";
 
 //Components:
 import CreateGroupForm from "../components/CreateGroupForm";
-import Button from "../components/Button";
+import MaterialButton from "../components/MaterialButton";
 
 export default class Groups extends Component {
 	render() {
@@ -25,7 +25,7 @@ export default class Groups extends Component {
 				<CreateGroupForm />
 
 				<div className="createGroupBtnWrapper">
-					<Button style={styles.meetupBtn}>Meet up!</Button>
+					<MaterialButton style={styles.meetupBtn}>Meet up!</MaterialButton>
 				</div>
 			</div>
 		</div>);
