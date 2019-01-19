@@ -8,8 +8,6 @@ export const styles = {
 		backgroundColor: "white",
 		padding: "0 10px",
 		color: "#444",
-		height: "50px",
-		borderRadius: "15px",
 		boxShadow: "0 5px 15px -5px rgba(0, 0, 0, 0.1)",
 	}
 };

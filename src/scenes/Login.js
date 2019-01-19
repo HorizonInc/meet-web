@@ -1,21 +1,25 @@
 import React from "react";
+import PropTypes from "prop-types";
 import axios from "axios";
 
+// Components
 import MaterialButton from "../components/MaterialButton";
 import { styles } from "./styles/LoginStyles";
 import logo from "../images/meet_logo.png";
 
+const SERVER_URL = "http://localhost:8080";
+
 export default class Login extends React.Component {
 	onFacebookLogin(){
 		axios
-			.get("http://192.168.0.115:8080/fb")
+			.get(`${SERVER_URL}/fb`)
 			.then(response => {
-				console.log("Response: ", response);
-			})
-			.catch(error => {
-				console.log("Error: ", error);
+				// console.log("Response: ", response.data.url);
+				this.props.history.push(response.data.url);
 			});
-
+		// .catch(error => {
+		// 	console.log("Error: ", error);
+		// });
 	}
 
 	render(){
@@ -35,3 +39,7 @@ export default class Login extends React.Component {
 		);
 	}
 }
+
+Login.propTypes = {
+	history: PropTypes.string
+};

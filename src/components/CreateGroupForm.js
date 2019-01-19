@@ -8,7 +8,7 @@ export default class CreateGroupForm extends Component {
 		super();
 
 		this.state = {
-			borderStyle: "none",
+			borderStyle: "1px solid #f0f0f0",
 			iconColour: "grey",
 			iconBorderWidth: "1px"
 		};
@@ -19,7 +19,7 @@ export default class CreateGroupForm extends Component {
 		var isCorrect = /^([A-Z]+#[A-Z0-9]{6})$/.test(str);
 		if (str === "") {
 			this.setState({
-				borderStyle: "none",
+				borderStyle: "1px solid #f0f0f0",
 				iconColour: "grey",
 				iconBorderWidth: "1px"
 			});
@@ -58,6 +58,18 @@ export default class CreateGroupForm extends Component {
 
 				<span>Invited users</span>
 				<ul className="invitedUsersWrapper">
+					<li>
+						<span>SAMANI#G8RVI4</span>
+						<button id="deleteInvite">
+							<i className="fas fa-times"></i>
+						</button>
+					</li>
+					<li>
+						<span>SAMANI#G8RVI4</span>
+						<button id="deleteInvite">
+							<i className="fas fa-times"></i>
+						</button>
+					</li>
 					<li>
 						<span>SAMANI#G8RVI4</span>
 						<button id="deleteInvite">
